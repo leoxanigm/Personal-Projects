@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gallary viewer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image gallery with three display options</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <main>
-    
-        <input type="radio" name="opt-select" id="option1" checked>
-        <label for="option1" class="option">Gallery 1</label>
-        <input type="radio" name="opt-select" id="option2">
-        <label for="option2" class="option">Gallery 2</label>
-        <input type="radio" name="opt-select" id="option3">
-        <label for="option3" class="option">Gallery 3</label>
-    
-    <input type="radio" name="img-select" id="img1" checked>
-    <input type="radio" name="img-select" id="img2">
-    <input type="radio" name="img-select" id="img3">
-    <input type="radio" name="img-select" id="img4">
-    <input type="radio" name="img-select" id="close">
-    <label for="close">X</label>
-  
-    <div id="main">
-        <div class="main-container">
-            <div class="img-container"><img src="https://thispersondoesnotexist.com/image" alt=""></div>
-            <div class="img-container"><img src="https://thispersondoesnotexist.com/image" alt=""></div>
-            <div class="img-container"><img src="https://thispersondoesnotexist.com/image" alt=""></div>
-            <div class="img-container"><img src="https://thispersondoesnotexist.com/image" alt=""></div>
+    <div class="main-container">
+        <div id="option-container">
+            <input type="radio" name="opt-select" id="option1-set" checked>
+            <label for="option1-set" class="option">Gallery 1</label>
+            <input type="radio" name="opt-select" id="option2-set">
+            <label for="option2-set" class="option">Gallery 2</label>
+            <input type="radio" name="opt-select" id="option3-set">
+            <label for="option3-set" class="option">Gallery 3</label>
+        </div>
+        
+        <div id="option1" class="option-set">
+            <div class="main-container">
+                <div class="img-container"><img src="img/1.jpg" alt=""></div>
+                <div class="img-container"><img src="img/2.jpg" alt=""></div>
+                <div class="img-container"><img src="img/3.jpg" alt=""></div>
+                <div class="img-container"><img src="img/4.jpg" alt=""></div>
+                <div id="close"></div>
+            </div>
+        <ul id="nav">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        </div>
+        <div id="msg">
+            <p>Gallery navigator with three viewing options. Images from <a href="https://thispersondoesnotexist.com/">thispersondoesnotexist.com</a></p>
+            <p>All three navigators use same HTML source.</p>
         </div>
     </div>
-
-    
 </main>
 
+<footer>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
